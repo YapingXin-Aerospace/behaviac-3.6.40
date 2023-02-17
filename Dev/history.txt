@@ -1,3 +1,9 @@
+﻿2022-07-04  3.6.40
+    1. 编辑器功能优化： 1. 增加BTVector3f的初始化代码 2. 禁用行为树调试时页签不断切换的功能，改成只停留在当前打开的页签上 3.…
+… 增加通过调试堆栈窗口直接打开行为树的功能；
+    2. behaviac性能优化：判定Self，不考虑大小写，参考935行也是这样；
+    3. 性能优化：reset调用 CompositeTask::traverse耗时较高，对于没有运行过的节点，就不做处理了；
+
 2017-09-11  3.6.39
     Add the End node.
     Fix a bug for exporting the parameters of the method.
