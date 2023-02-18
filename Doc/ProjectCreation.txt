@@ -1,0 +1,8 @@
+
+$(SolutionDir)Win32\Output\DLL\$(Platform)\$(Configuration)\
+$(SolutionDir)Win32\IntDir\LibDev\$(ProjectName)\$(Platform)\$(Configuration)\
+
+
+../../../../../inc
+
+

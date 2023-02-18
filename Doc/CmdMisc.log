@@ -1,0 +1,10 @@
+mkdir vs2022
+cd vs2022
+
+cmake -G "Visual Studio 17 2022" -A x64 -DBEHAVIAC_VERSION_MODE=ForeUseRelease ../..
+
+
+cmake -G "Visual Studio 17 2022" -A x64 -DBEHAVIAC_VERSION_MODE=ForeUseDev ../..
+
+
+cmake -G "Visual Studio 17 2022" -A Win32 -DBEHAVIAC_VERSION_MODE=ForeUseDev ../..
