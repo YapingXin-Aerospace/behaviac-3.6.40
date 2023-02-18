@@ -16,6 +16,48 @@
     <Filter Include="src\agent">
       <UniqueIdentifier>{46bc37f6-ef48-4d87-a95c-71bf60139fd2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="inc\behaviac\behaviortree">
+      <UniqueIdentifier>{0680c617-67b3-4f15-8ccc-0988960b2887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\behaviortree">
+      <UniqueIdentifier>{ac5060bc-f60e-47a7-b8ff-11703f9acc5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\behaviortree\attachments">
+      <UniqueIdentifier>{640c07a8-5444-42dc-9324-0f1e35938ec7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\behaviortree\attachments">
+      <UniqueIdentifier>{b53602ec-7118-41c1-8e80-2190939ce92f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\behaviortree\nodes">
+      <UniqueIdentifier>{2f6af4ec-7e5e-480f-9c51-387039aa4fbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\behaviortree\nodes">
+      <UniqueIdentifier>{3ab28d1e-b687-4bcb-a2dc-0b4ba4536195}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\behaviortree\nodes\actions">
+      <UniqueIdentifier>{52dd0a5b-75b3-4060-a962-8a2e8ed28450}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\behaviortree\nodes\actions">
+      <UniqueIdentifier>{44db64c4-7877-4260-bf95-342207ab9432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\behaviortree\nodes\composites">
+      <UniqueIdentifier>{c658fa31-ee62-4adb-b01d-fd4015df77a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\behaviortree\nodes\composites">
+      <UniqueIdentifier>{12dd3fc9-c5a3-4158-9a90-8e1bf1ebfca0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\behaviortree\nodes\conditions">
+      <UniqueIdentifier>{b40206de-21a3-409d-affd-4c104255d86c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\behaviortree\nodes\conditions">
+      <UniqueIdentifier>{b173b4ba-6377-436c-bfaf-143e13e03a9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\behaviortree\nodes\decorators">
+      <UniqueIdentifier>{0478fba1-e06c-43b5-87f0-8bdfac805291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\behaviortree\nodes\decorators">
+      <UniqueIdentifier>{c39f0f29-84fa-4b9b-a102-0a9c86a224e7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\inc\behaviac\agent\agent.h">
@@ -35,6 +77,153 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\src\agent\propertynode.h">
       <Filter>src\agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\behaviortree.h">
+      <Filter>inc\behaviac\behaviortree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\behaviortree_task.h">
+      <Filter>inc\behaviac\behaviortree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\generator.h">
+      <Filter>inc\behaviac\behaviortree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\propertymember.h">
+      <Filter>inc\behaviac\behaviortree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\attachments\attachaction.h">
+      <Filter>inc\behaviac\behaviortree\attachments</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\attachments\effector.h">
+      <Filter>inc\behaviac\behaviortree\attachments</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\attachments\event.h">
+      <Filter>inc\behaviac\behaviortree\attachments</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\attachments\precondition.h">
+      <Filter>inc\behaviac\behaviortree\attachments</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\actions\action.h">
+      <Filter>inc\behaviac\behaviortree\nodes\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\actions\assignment.h">
+      <Filter>inc\behaviac\behaviortree\nodes\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\actions\compute.h">
+      <Filter>inc\behaviac\behaviortree\nodes\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\actions\end.h">
+      <Filter>inc\behaviac\behaviortree\nodes\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\actions\noop.h">
+      <Filter>inc\behaviac\behaviortree\nodes\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\actions\wait.h">
+      <Filter>inc\behaviac\behaviortree\nodes\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\actions\waitforsignal.h">
+      <Filter>inc\behaviac\behaviortree\nodes\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\actions\waitframes.h">
+      <Filter>inc\behaviac\behaviortree\nodes\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\composites\compositestochastic.h">
+      <Filter>inc\behaviac\behaviortree\nodes\composites</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\composites\ifelse.h">
+      <Filter>inc\behaviac\behaviortree\nodes\composites</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\composites\parallel.h">
+      <Filter>inc\behaviac\behaviortree\nodes\composites</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\composites\referencebehavior.h">
+      <Filter>inc\behaviac\behaviortree\nodes\composites</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\composites\selector.h">
+      <Filter>inc\behaviac\behaviortree\nodes\composites</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\composites\selectorloop.h">
+      <Filter>inc\behaviac\behaviortree\nodes\composites</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\composites\selectorprobability.h">
+      <Filter>inc\behaviac\behaviortree\nodes\composites</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\composites\selectorstochastic.h">
+      <Filter>inc\behaviac\behaviortree\nodes\composites</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\composites\sequence.h">
+      <Filter>inc\behaviac\behaviortree\nodes\composites</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\composites\sequencestochastic.h">
+      <Filter>inc\behaviac\behaviortree\nodes\composites</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\composites\withprecondition.h">
+      <Filter>inc\behaviac\behaviortree\nodes\composites</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\conditions\and.h">
+      <Filter>inc\behaviac\behaviortree\nodes\conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\conditions\condition.h">
+      <Filter>inc\behaviac\behaviortree\nodes\conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\conditions\conditionbase.h">
+      <Filter>inc\behaviac\behaviortree\nodes\conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\conditions\false.h">
+      <Filter>inc\behaviac\behaviortree\nodes\conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\conditions\or.h">
+      <Filter>inc\behaviac\behaviortree\nodes\conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\conditions\true.h">
+      <Filter>inc\behaviac\behaviortree\nodes\conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\decorators\decoratoralwaysfailure.h">
+      <Filter>inc\behaviac\behaviortree\nodes\decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\decorators\decoratoralwaysrunning.h">
+      <Filter>inc\behaviac\behaviortree\nodes\decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\decorators\decoratoralwayssuccess.h">
+      <Filter>inc\behaviac\behaviortree\nodes\decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\decorators\decoratorcount.h">
+      <Filter>inc\behaviac\behaviortree\nodes\decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\decorators\decoratorcountlimit.h">
+      <Filter>inc\behaviac\behaviortree\nodes\decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\decorators\decoratorfailureuntil.h">
+      <Filter>inc\behaviac\behaviortree\nodes\decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\decorators\decoratorframes.h">
+      <Filter>inc\behaviac\behaviortree\nodes\decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\decorators\decoratoriterator.h">
+      <Filter>inc\behaviac\behaviortree\nodes\decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\decorators\decoratorlog.h">
+      <Filter>inc\behaviac\behaviortree\nodes\decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\decorators\decoratorloop.h">
+      <Filter>inc\behaviac\behaviortree\nodes\decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\decorators\decoratorloopuntil.h">
+      <Filter>inc\behaviac\behaviortree\nodes\decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\decorators\decoratornot.h">
+      <Filter>inc\behaviac\behaviortree\nodes\decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\decorators\decoratorrepeat.h">
+      <Filter>inc\behaviac\behaviortree\nodes\decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\decorators\decoratorsuccessuntil.h">
+      <Filter>inc\behaviac\behaviortree\nodes\decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\decorators\decoratortime.h">
+      <Filter>inc\behaviac\behaviortree\nodes\decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\decorators\decoratorweight.h">
+      <Filter>inc\behaviac\behaviortree\nodes\decorators</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +252,150 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\src\agent\taskmethod.cpp">
       <Filter>src\agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\behaviortree.cpp">
+      <Filter>src\behaviortree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\behaviortree_task.cpp">
+      <Filter>src\behaviortree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\registernodes.cpp">
+      <Filter>src\behaviortree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\attachments\attachaction.cpp">
+      <Filter>src\behaviortree\attachments</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\attachments\Effector.cpp">
+      <Filter>src\behaviortree\attachments</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\attachments\event.cpp">
+      <Filter>src\behaviortree\attachments</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\attachments\Precondition.cpp">
+      <Filter>src\behaviortree\attachments</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\actions\action.cpp">
+      <Filter>src\behaviortree\nodes\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\actions\assignment.cpp">
+      <Filter>src\behaviortree\nodes\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\actions\compute.cpp">
+      <Filter>src\behaviortree\nodes\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\actions\end.cpp">
+      <Filter>src\behaviortree\nodes\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\actions\noop.cpp">
+      <Filter>src\behaviortree\nodes\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\actions\wait.cpp">
+      <Filter>src\behaviortree\nodes\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\actions\waitforsignal.cpp">
+      <Filter>src\behaviortree\nodes\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\actions\waitframes.cpp">
+      <Filter>src\behaviortree\nodes\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\composites\compositestochastic.cpp">
+      <Filter>src\behaviortree\nodes\composites</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\composites\ifelse.cpp">
+      <Filter>src\behaviortree\nodes\composites</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\composites\parallel.cpp">
+      <Filter>src\behaviortree\nodes\composites</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\composites\referencebehavior.cpp">
+      <Filter>src\behaviortree\nodes\composites</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\composites\selector.cpp">
+      <Filter>src\behaviortree\nodes\composites</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\composites\selectorloop.cpp">
+      <Filter>src\behaviortree\nodes\composites</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\composites\selectorprobability.cpp">
+      <Filter>src\behaviortree\nodes\composites</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\composites\selectorstochastic.cpp">
+      <Filter>src\behaviortree\nodes\composites</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\composites\sequence.cpp">
+      <Filter>src\behaviortree\nodes\composites</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\composites\sequencestochastic.cpp">
+      <Filter>src\behaviortree\nodes\composites</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\composites\withprecondition.cpp">
+      <Filter>src\behaviortree\nodes\composites</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\conditions\and.cpp">
+      <Filter>src\behaviortree\nodes\conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\conditions\condition.cpp">
+      <Filter>src\behaviortree\nodes\conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\conditions\conditionbase.cpp">
+      <Filter>src\behaviortree\nodes\conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\conditions\false.cpp">
+      <Filter>src\behaviortree\nodes\conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\conditions\or.cpp">
+      <Filter>src\behaviortree\nodes\conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\conditions\true.cpp">
+      <Filter>src\behaviortree\nodes\conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\decorators\decoratoralwaysfailure.cpp">
+      <Filter>src\behaviortree\nodes\decorators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\decorators\decoratoralwaysrunning.cpp">
+      <Filter>src\behaviortree\nodes\decorators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\decorators\decoratoralwayssuccess.cpp">
+      <Filter>src\behaviortree\nodes\decorators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\decorators\decoratorcount.cpp">
+      <Filter>src\behaviortree\nodes\decorators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\decorators\decoratorcountlimit.cpp">
+      <Filter>src\behaviortree\nodes\decorators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\decorators\decoratorfailureuntil.cpp">
+      <Filter>src\behaviortree\nodes\decorators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\decorators\decoratorframes.cpp">
+      <Filter>src\behaviortree\nodes\decorators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\decorators\decoratoriterator.cpp">
+      <Filter>src\behaviortree\nodes\decorators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\decorators\decoratorlog.cpp">
+      <Filter>src\behaviortree\nodes\decorators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\decorators\decoratorloop.cpp">
+      <Filter>src\behaviortree\nodes\decorators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\decorators\decoratorloopuntil.cpp">
+      <Filter>src\behaviortree\nodes\decorators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\decorators\decoratornot.cpp">
+      <Filter>src\behaviortree\nodes\decorators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\decorators\decoratorrepeat.cpp">
+      <Filter>src\behaviortree\nodes\decorators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\decorators\decoratorsuccessuntil.cpp">
+      <Filter>src\behaviortree\nodes\decorators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\decorators\decoratortime.cpp">
+      <Filter>src\behaviortree\nodes\decorators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\decorators\decoratorweight.cpp">
+      <Filter>src\behaviortree\nodes\decorators</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
