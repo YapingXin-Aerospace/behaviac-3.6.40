@@ -6,3 +6,17 @@ $(SolutionDir)Win32\IntDir\LibDev\$(ProjectName)\$(Platform)\$(Configuration)\
 ../../../../../inc
 
 
+
+
+Demos:
+
+echo ======== Copy dependency shared libraries ========
+copy $(PTW32_ROOT)\DLL\$(Platform)\$(Configuration)\pthreadVC3.dll $(TargetDir)
+copy $(MXML_DLL_Root)\DLL\$(Configuration)\$(Platform)\mxml1.dll $(TargetDir)
+copy ..\..\..\..\..\Resource\Modules\DP_Integration_Lib\WIN32_DLL\$(Platform)\$(Configuration)\DPIntegration.dll $(TargetDir)
+echo ======== Copied dependency shared libraries ========
+
+echo ======== Copy Related Resource Files ========
+xcopy /Y ..\..\..\..\..\Resource\Configuration\EHM-Host.xml $(TargetDir)Configuration\
+echo ======== Copied Related Resource Files ========
+
