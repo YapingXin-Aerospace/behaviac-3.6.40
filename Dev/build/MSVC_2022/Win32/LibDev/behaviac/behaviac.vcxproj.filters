@@ -151,6 +151,18 @@
     <Filter Include="src\network">
       <UniqueIdentifier>{94eb07f3-6d4e-452a-a92a-ffb73d9aa14f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="inc\behaviac\htn">
+      <UniqueIdentifier>{826d8db8-734e-4a22-a84f-808bea5d8d35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\htn">
+      <UniqueIdentifier>{cfe06a74-4f40-4f48-bb44-77c0e5703ad1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\fsm">
+      <UniqueIdentifier>{cad49db6-628e-44d8-b946-5d21f87b4bf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\fsm">
+      <UniqueIdentifier>{401bda59-6eed-423a-8633-bdb6060ba500}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\inc\behaviac\agent\agent.h">
@@ -558,6 +570,42 @@
     <ClInclude Include="..\..\..\..\..\inc\behaviac\network\network.h">
       <Filter>inc\behaviac\network</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\htn\method.h">
+      <Filter>inc\behaviac\htn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\htn\planner.h">
+      <Filter>inc\behaviac\htn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\htn\plannertask.h">
+      <Filter>inc\behaviac\htn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\htn\task.h">
+      <Filter>inc\behaviac\htn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\fsm\alwaystransition.h">
+      <Filter>inc\behaviac\fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\fsm\fsm.h">
+      <Filter>inc\behaviac\fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\fsm\startcondition.h">
+      <Filter>inc\behaviac\fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\fsm\state.h">
+      <Filter>inc\behaviac\fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\fsm\transitioncondition.h">
+      <Filter>inc\behaviac\fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\fsm\waitframesstate.h">
+      <Filter>inc\behaviac\fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\fsm\waitstate.h">
+      <Filter>inc\behaviac\fsm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\fsm\waittransition.h">
+      <Filter>inc\behaviac\fsm</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\..\inc\behaviac\agent\agent.inl">
@@ -849,6 +897,48 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\src\network\network.cpp">
       <Filter>src\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\htn\agentproperties.cpp">
+      <Filter>src\htn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\htn\agentstate.cpp">
+      <Filter>src\htn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\htn\htnmethod.cpp">
+      <Filter>src\htn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\htn\planner.cpp">
+      <Filter>src\htn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\htn\plannertask.cpp">
+      <Filter>src\htn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\htn\task.cpp">
+      <Filter>src\htn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\fsm\alwaystransition.cpp">
+      <Filter>src\fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\fsm\fsm.cpp">
+      <Filter>src\fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\fsm\fsmstate.cpp">
+      <Filter>src\fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\fsm\startcondition.cpp">
+      <Filter>src\fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\fsm\transitioncondition.cpp">
+      <Filter>src\fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\fsm\waitframesstate.cpp">
+      <Filter>src\fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\fsm\waitstate.cpp">
+      <Filter>src\fsm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\fsm\waittransition.cpp">
+      <Filter>src\fsm</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
