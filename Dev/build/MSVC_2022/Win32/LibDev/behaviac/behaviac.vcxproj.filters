@@ -58,6 +58,87 @@
     <Filter Include="src\behaviortree\nodes\decorators">
       <UniqueIdentifier>{c39f0f29-84fa-4b9b-a102-0a9c86a224e7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="inc\behaviac\common">
+      <UniqueIdentifier>{e6c979a8-b16e-4dfb-93ff-25f42b53066b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{d549a5bf-acf8-42c0-bab8-989081087984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\common\container">
+      <UniqueIdentifier>{86c28d29-ff08-461e-800c-fe4f45fc10e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\common\file">
+      <UniqueIdentifier>{ca57cef0-2e76-4e4d-b2d1-7df3d280472d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\file">
+      <UniqueIdentifier>{74f4292a-12c0-4d6a-918d-d476fa96f16e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\common\logger">
+      <UniqueIdentifier>{da9ffca2-9d82-49a5-ae5d-17bfd45cc630}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\logger">
+      <UniqueIdentifier>{bbc76e64-edfb-413c-9968-b728bb8b4bb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\common\memory">
+      <UniqueIdentifier>{889f933b-b69b-4103-bc17-11a72c32ea76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\memory">
+      <UniqueIdentifier>{2f2395aa-c870-4bee-a986-f69b2967e363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\common\meta">
+      <UniqueIdentifier>{105b0640-5df1-4419-b529-02647b2f85c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\common\object">
+      <UniqueIdentifier>{8c9bedf8-7c06-46a8-9cfd-ccacae24d31a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\common\profiler">
+      <UniqueIdentifier>{d767caef-e20c-4580-94bf-ed2257b50585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\common\randomgenerator">
+      <UniqueIdentifier>{fcec1b68-d6e0-4f20-815e-5f46be99f1e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\common\rapidxml">
+      <UniqueIdentifier>{c34975e7-dab6-4c3e-b880-c018b2824c60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\common\serialization">
+      <UniqueIdentifier>{bb5f3913-5755-44e8-8aaa-d0226fc2ddaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\common\socket">
+      <UniqueIdentifier>{b98dd366-b91c-4b0d-8500-ec35e8dfc8a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\common\string">
+      <UniqueIdentifier>{52ba167e-65ae-4a69-96f1-675ac79f08b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\common\thread">
+      <UniqueIdentifier>{4f08e174-c229-4f27-a31f-8d30427862d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\common\xml">
+      <UniqueIdentifier>{bcf939b8-7991-4929-ac28-0a7a594646fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\object">
+      <UniqueIdentifier>{637f1b86-c3c7-41bc-a8b0-243776d0aa51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\profiler">
+      <UniqueIdentifier>{cc369e8b-bc23-43f2-a048-6cb91e551804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\randomgenerator">
+      <UniqueIdentifier>{bd6680f3-e06d-48e4-911a-39e2b7a38274}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\serialization">
+      <UniqueIdentifier>{03075cf7-defe-42fb-add8-9be53a9e9239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\socket">
+      <UniqueIdentifier>{2ab64a8a-6a72-4309-a56d-0e0e4d840416}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\string">
+      <UniqueIdentifier>{b863e347-cfeb-4cd2-be62-e0994385f57c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\thread">
+      <UniqueIdentifier>{67214d0d-4fdc-49ba-a46f-d0d720b2e1df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\xml">
+      <UniqueIdentifier>{437a3204-e9d0-479a-b3ce-61f7545d3472}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\inc\behaviac\agent\agent.h">
@@ -224,6 +305,234 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\decorators\decoratorweight.h">
       <Filter>inc\behaviac\behaviortree\nodes\decorators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\container\fixed_buffer.h">
+      <Filter>inc\behaviac\common\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\container\fixed_hash.h">
+      <Filter>inc\behaviac\common\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\container\hash_exmemory.h">
+      <Filter>inc\behaviac\common\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\container\list.h">
+      <Filter>inc\behaviac\common\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\container\map.h">
+      <Filter>inc\behaviac\common\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\container\set.h">
+      <Filter>inc\behaviac\common\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\container\spscqueue.h">
+      <Filter>inc\behaviac\common\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\container\string.h">
+      <Filter>inc\behaviac\common\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\container\vector.h">
+      <Filter>inc\behaviac\common\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\file\file.h">
+      <Filter>inc\behaviac\common\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\file\filemanager.h">
+      <Filter>inc\behaviac\common\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\file\filesystem.h">
+      <Filter>inc\behaviac\common\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\common\file\listfiles.h">
+      <Filter>src\common\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\logger\logger.h">
+      <Filter>inc\behaviac\common\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\logger\logmanager.h">
+      <Filter>inc\behaviac\common\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\memory\memory.h">
+      <Filter>inc\behaviac\common\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\memory\objectpool.h">
+      <Filter>inc\behaviac\common\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\memory\stl_allocator.h">
+      <Filter>inc\behaviac\common\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\hasfunction.h">
+      <Filter>inc\behaviac\common\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\ifthenelse.h">
+      <Filter>inc\behaviac\common\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\isenum.h">
+      <Filter>inc\behaviac\common\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\isfunction.h">
+      <Filter>inc\behaviac\common\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\isfundamental.h">
+      <Filter>inc\behaviac\common\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\ismap.h">
+      <Filter>inc\behaviac\common\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\isstruct.h">
+      <Filter>inc\behaviac\common\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\isvector.h">
+      <Filter>inc\behaviac\common\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\meta.h">
+      <Filter>inc\behaviac\common\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\metabase.h">
+      <Filter>inc\behaviac\common\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\metatypes.h">
+      <Filter>inc\behaviac\common\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\pointertype.h">
+      <Filter>inc\behaviac\common\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\reftype.h">
+      <Filter>inc\behaviac\common\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\removeall.h">
+      <Filter>inc\behaviac\common\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\removeconst.h">
+      <Filter>inc\behaviac\common\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\removeptr.h">
+      <Filter>inc\behaviac\common\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\removeref.h">
+      <Filter>inc\behaviac\common\meta</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\object\member.h">
+      <Filter>inc\behaviac\common\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\object\tagobject.h">
+      <Filter>inc\behaviac\common\object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\profiler\profiler.h">
+      <Filter>inc\behaviac\common\profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\randomgenerator\randomgenerator.h">
+      <Filter>inc\behaviac\common\randomgenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\rapidxml\rapidxml.hpp">
+      <Filter>inc\behaviac\common\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\rapidxml\rapidxml_iterators.hpp">
+      <Filter>inc\behaviac\common\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\rapidxml\rapidxml_print.hpp">
+      <Filter>inc\behaviac\common\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\rapidxml\rapidxml_utils.hpp">
+      <Filter>inc\behaviac\common\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\serialization\ionode.h">
+      <Filter>inc\behaviac\common\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\serialization\textnode.h">
+      <Filter>inc\behaviac\common\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\socket\socketconnect.h">
+      <Filter>inc\behaviac\common\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\socket\socketconnect_base.h">
+      <Filter>inc\behaviac\common\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\string\fromstring.h">
+      <Filter>inc\behaviac\common\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\string\stringcrc.h">
+      <Filter>inc\behaviac\common\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\string\stringutils.h">
+      <Filter>inc\behaviac\common\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\string\tostring.h">
+      <Filter>inc\behaviac\common\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\thread\mutex_lock.h">
+      <Filter>inc\behaviac\common\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\thread\thread.h">
+      <Filter>inc\behaviac\common\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\thread\wrapper.h">
+      <Filter>inc\behaviac\common\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\xml\ixml.h">
+      <Filter>inc\behaviac\common\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\xml\xml.h">
+      <Filter>inc\behaviac\common\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\xml\xmlanalyzer.h">
+      <Filter>inc\behaviac\common\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\_config.h">
+      <Filter>inc\behaviac\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\assert.h">
+      <Filter>inc\behaviac\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\base.h">
+      <Filter>inc\behaviac\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\basictypes.h">
+      <Filter>inc\behaviac\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\config.h">
+      <Filter>inc\behaviac\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\convertutf.h">
+      <Filter>inc\behaviac\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\crc.h">
+      <Filter>inc\behaviac\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\defines.h">
+      <Filter>inc\behaviac\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\factory.h">
+      <Filter>inc\behaviac\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\member.h">
+      <Filter>inc\behaviac\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta.h">
+      <Filter>inc\behaviac\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\msc_stdint.h">
+      <Filter>inc\behaviac\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\operation.h">
+      <Filter>inc\behaviac\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\rttibase.h">
+      <Filter>inc\behaviac\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\smartptr.h">
+      <Filter>inc\behaviac\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\staticassert.h">
+      <Filter>inc\behaviac\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\swapbyte.h">
+      <Filter>inc\behaviac\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\workspace.h">
+      <Filter>inc\behaviac\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviac.h">
+      <Filter>inc\behaviac</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -397,5 +706,118 @@
     <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\decorators\decoratorweight.cpp">
       <Filter>src\behaviortree\nodes\decorators</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\file\file.cpp">
+      <Filter>src\common\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\file\filemanager.cpp">
+      <Filter>src\common\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\file\filesystem_gcc.cpp">
+      <Filter>src\common\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\file\filesystem_vcc.cpp">
+      <Filter>src\common\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\file\listfiles.cpp">
+      <Filter>src\common\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\logger\logger.cpp">
+      <Filter>src\common\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\logger\logmanager.cpp">
+      <Filter>src\common\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\memory\memory.cpp">
+      <Filter>src\common\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\object\tagobject.cpp">
+      <Filter>src\common\object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\profiler\profiler.cpp">
+      <Filter>src\common\profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\randomgenerator\randomgenerator.cpp">
+      <Filter>src\common\randomgenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\serialization\textnode.cpp">
+      <Filter>src\common\serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\socket\defaultsocketwrapper_gcc.cpp">
+      <Filter>src\common\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\socket\defaultsocketwrapper_vcc.cpp">
+      <Filter>src\common\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\socket\socketconnect.cpp">
+      <Filter>src\common\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\socket\socketconnect_base.cpp">
+      <Filter>src\common\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\string\stringcrc.cpp">
+      <Filter>src\common\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\string\stringutils.cpp">
+      <Filter>src\common\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\thread\mutex_gcc.cpp">
+      <Filter>src\common\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\thread\mutex_vcc.cpp">
+      <Filter>src\common\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\thread\wrapper.cpp">
+      <Filter>src\common\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\thread\wrapper_gcc.cpp">
+      <Filter>src\common\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\thread\wrapper_vcc.cpp">
+      <Filter>src\common\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\xml\xml.cpp">
+      <Filter>src\common\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\xml\xmlanalyzer.cpp">
+      <Filter>src\common\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\assert.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\base.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\convertutf.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\crc.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\factory.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\meta.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\operation.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\rttibase.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\system_gcc.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\system_vcc.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\common\workspace.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\..\inc\behaviac\common\rapidxml\license.txt">
+      <Filter>inc\behaviac\common\rapidxml</Filter>
+    </Text>
   </ItemGroup>
 </Project>

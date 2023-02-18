@@ -30,27 +30,27 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -80,6 +80,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AdditionalOptions>/bigobj</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -94,6 +96,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/bigobj</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -109,6 +112,8 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>../../../../../inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AdditionalOptions>/bigobj</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -123,6 +128,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/bigobj</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -137,6 +143,7 @@
     <ClInclude Include="..\..\..\..\..\inc\behaviac\agent\context.h" />
     <ClInclude Include="..\..\..\..\..\inc\behaviac\agent\registermacros.h" />
     <ClInclude Include="..\..\..\..\..\inc\behaviac\agent\state.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviac.h" />
     <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\attachments\attachaction.h" />
     <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\attachments\effector.h" />
     <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\attachments\event.h" />
@@ -186,7 +193,82 @@
     <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\decorators\decoratortime.h" />
     <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\nodes\decorators\decoratorweight.h" />
     <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviortree\propertymember.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\assert.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\base.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\basictypes.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\config.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\container\fixed_buffer.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\container\fixed_hash.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\container\hash_exmemory.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\container\list.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\container\map.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\container\set.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\container\spscqueue.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\container\string.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\container\vector.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\convertutf.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\crc.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\defines.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\factory.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\file\file.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\file\filemanager.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\file\filesystem.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\logger\logger.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\logger\logmanager.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\member.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\memory\memory.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\memory\objectpool.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\memory\stl_allocator.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\hasfunction.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\ifthenelse.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\isenum.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\isfunction.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\isfundamental.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\ismap.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\isstruct.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\isvector.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\meta.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\metabase.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\metatypes.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\pointertype.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\reftype.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\removeall.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\removeconst.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\removeptr.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\meta\removeref.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\msc_stdint.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\object\member.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\object\tagobject.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\operation.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\profiler\profiler.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\randomgenerator\randomgenerator.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\rapidxml\rapidxml.hpp" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\rapidxml\rapidxml_iterators.hpp" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\rapidxml\rapidxml_print.hpp" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\rapidxml\rapidxml_utils.hpp" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\rttibase.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\serialization\ionode.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\serialization\textnode.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\smartptr.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\socket\socketconnect.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\socket\socketconnect_base.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\staticassert.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\string\fromstring.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\string\stringcrc.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\string\stringutils.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\string\tostring.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\swapbyte.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\thread\mutex_lock.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\thread\thread.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\thread\wrapper.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\workspace.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\xml\ixml.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\xml\xml.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\xml\xmlanalyzer.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\common\_config.h" />
     <ClInclude Include="..\..\..\..\..\src\agent\propertynode.h" />
+    <ClInclude Include="..\..\..\..\..\src\common\file\listfiles.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\..\inc\behaviac\agent\agent.inl" />
@@ -247,6 +329,45 @@
     <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\decorators\decoratortime.cpp" />
     <ClCompile Include="..\..\..\..\..\src\behaviortree\nodes\decorators\decoratorweight.cpp" />
     <ClCompile Include="..\..\..\..\..\src\behaviortree\registernodes.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\assert.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\base.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\convertutf.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\crc.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\factory.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\file\file.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\file\filemanager.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\file\filesystem_gcc.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\file\filesystem_vcc.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\file\listfiles.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\logger\logger.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\logger\logmanager.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\memory\memory.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\meta.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\object\tagobject.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\operation.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\profiler\profiler.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\randomgenerator\randomgenerator.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\rttibase.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\serialization\textnode.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\socket\defaultsocketwrapper_gcc.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\socket\defaultsocketwrapper_vcc.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\socket\socketconnect.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\socket\socketconnect_base.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\string\stringcrc.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\string\stringutils.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\system_gcc.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\system_vcc.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\thread\mutex_gcc.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\thread\mutex_vcc.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\thread\wrapper.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\thread\wrapper_gcc.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\thread\wrapper_vcc.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\workspace.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\xml\xml.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\common\xml\xmlanalyzer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\..\inc\behaviac\common\rapidxml\license.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
