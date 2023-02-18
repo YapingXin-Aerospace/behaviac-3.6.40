@@ -78,7 +78,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <AdditionalOptions>/bigobj</AdditionalOptions>
@@ -94,7 +94,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalOptions>/bigobj</AdditionalOptions>
     </ClCompile>
@@ -109,7 +109,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>../../../../../inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -126,7 +126,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalOptions>/bigobj</AdditionalOptions>
     </ClCompile>
@@ -267,12 +267,16 @@
     <ClInclude Include="..\..\..\..\..\inc\behaviac\common\xml\xml.h" />
     <ClInclude Include="..\..\..\..\..\inc\behaviac\common\xml\xmlanalyzer.h" />
     <ClInclude Include="..\..\..\..\..\inc\behaviac\common\_config.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\property\properties.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\property\property.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\property\vector_ext.h" />
     <ClInclude Include="..\..\..\..\..\src\agent\propertynode.h" />
     <ClInclude Include="..\..\..\..\..\src\common\file\listfiles.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\..\inc\behaviac\agent\agent.inl" />
     <None Include="..\..\..\..\..\inc\behaviac\agent\context.inl" />
+    <None Include="..\..\..\..\..\inc\behaviac\property\operators.inl" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\src\agent\agent.cpp" />
@@ -365,6 +369,8 @@
     <ClCompile Include="..\..\..\..\..\src\common\workspace.cpp" />
     <ClCompile Include="..\..\..\..\..\src\common\xml\xml.cpp" />
     <ClCompile Include="..\..\..\..\..\src\common\xml\xmlanalyzer.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\property\properties.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\property\property.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\..\..\..\inc\behaviac\common\rapidxml\license.txt" />

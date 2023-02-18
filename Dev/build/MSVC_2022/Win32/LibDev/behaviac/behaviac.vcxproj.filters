@@ -139,6 +139,12 @@
     <Filter Include="src\common\xml">
       <UniqueIdentifier>{437a3204-e9d0-479a-b3ce-61f7545d3472}</UniqueIdentifier>
     </Filter>
+    <Filter Include="inc\behaviac\property">
+      <UniqueIdentifier>{7b08ebff-dda9-4bc4-a210-6fd9cd7a62a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\property">
+      <UniqueIdentifier>{512463b9-908b-451a-a3f5-1c3886898556}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\inc\behaviac\agent\agent.h">
@@ -534,6 +540,15 @@
     <ClInclude Include="..\..\..\..\..\inc\behaviac\behaviac.h">
       <Filter>inc\behaviac</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\property\properties.h">
+      <Filter>inc\behaviac\property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\property\property.h">
+      <Filter>inc\behaviac\property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\property\vector_ext.h">
+      <Filter>inc\behaviac\property</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\..\inc\behaviac\agent\agent.inl">
@@ -541,6 +556,9 @@
     </None>
     <None Include="..\..\..\..\..\inc\behaviac\agent\context.inl">
       <Filter>inc\behaviac\agent</Filter>
+    </None>
+    <None Include="..\..\..\..\..\inc\behaviac\property\operators.inl">
+      <Filter>inc\behaviac\property</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -813,6 +831,12 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\src\common\workspace.cpp">
       <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\property\properties.cpp">
+      <Filter>src\property</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\property\property.cpp">
+      <Filter>src\property</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
