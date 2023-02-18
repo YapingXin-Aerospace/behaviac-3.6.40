@@ -267,6 +267,7 @@
     <ClInclude Include="..\..\..\..\..\inc\behaviac\common\xml\xml.h" />
     <ClInclude Include="..\..\..\..\..\inc\behaviac\common\xml\xmlanalyzer.h" />
     <ClInclude Include="..\..\..\..\..\inc\behaviac\common\_config.h" />
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\network\network.h" />
     <ClInclude Include="..\..\..\..\..\inc\behaviac\property\properties.h" />
     <ClInclude Include="..\..\..\..\..\inc\behaviac\property\property.h" />
     <ClInclude Include="..\..\..\..\..\inc\behaviac\property\vector_ext.h" />
@@ -369,6 +370,7 @@
     <ClCompile Include="..\..\..\..\..\src\common\workspace.cpp" />
     <ClCompile Include="..\..\..\..\..\src\common\xml\xml.cpp" />
     <ClCompile Include="..\..\..\..\..\src\common\xml\xmlanalyzer.cpp" />
+    <ClCompile Include="..\..\..\..\..\src\network\network.cpp" />
     <ClCompile Include="..\..\..\..\..\src\property\properties.cpp" />
     <ClCompile Include="..\..\..\..\..\src\property\property.cpp" />
   </ItemGroup>

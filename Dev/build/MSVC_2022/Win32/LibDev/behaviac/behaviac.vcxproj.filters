@@ -145,6 +145,12 @@
     <Filter Include="src\property">
       <UniqueIdentifier>{512463b9-908b-451a-a3f5-1c3886898556}</UniqueIdentifier>
     </Filter>
+    <Filter Include="inc\behaviac\network">
+      <UniqueIdentifier>{b730fa4d-29e8-45d7-8949-d59db4393732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\network">
+      <UniqueIdentifier>{94eb07f3-6d4e-452a-a92a-ffb73d9aa14f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\inc\behaviac\agent\agent.h">
@@ -549,6 +555,9 @@
     <ClInclude Include="..\..\..\..\..\inc\behaviac\property\vector_ext.h">
       <Filter>inc\behaviac\property</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\network\network.h">
+      <Filter>inc\behaviac\network</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\..\inc\behaviac\agent\agent.inl">
@@ -837,6 +846,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\..\src\property\property.cpp">
       <Filter>src\property</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\network\network.cpp">
+      <Filter>src\network</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
