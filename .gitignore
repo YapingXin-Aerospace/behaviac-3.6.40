@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+/Dev/build/MSVC_2022/Win32/Output
+/Dev/build/MSVC_2022/Win32/IntDir
+/Dev/build/MSVC_2022/Win32/LibDev/behaviac/behaviac.vcxproj.user
+/Dev/build/MSVC_2022/.vs

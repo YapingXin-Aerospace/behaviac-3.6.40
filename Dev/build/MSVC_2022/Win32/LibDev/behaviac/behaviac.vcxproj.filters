@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="inc">
+      <UniqueIdentifier>{9b4b0d1e-fbec-4b4c-8f67-3030e228289f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{604d18af-7b34-4996-b16b-2fb6d908b495}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac">
+      <UniqueIdentifier>{57549c0d-ad46-4cd0-af17-b90c0df814be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\behaviac\agent">
+      <UniqueIdentifier>{4bc888e8-b631-46cf-a9ca-cd7d42f1225c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\agent">
+      <UniqueIdentifier>{46bc37f6-ef48-4d87-a95c-71bf60139fd2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\agent\agent.h">
+      <Filter>inc\behaviac\agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\agent\agentstate.h">
+      <Filter>inc\behaviac\agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\agent\context.h">
+      <Filter>inc\behaviac\agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\agent\registermacros.h">
+      <Filter>inc\behaviac\agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\inc\behaviac\agent\state.h">
+      <Filter>inc\behaviac\agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\src\agent\propertynode.h">
+      <Filter>src\agent</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\inc\behaviac\agent\agent.inl">
+      <Filter>inc\behaviac\agent</Filter>
+    </None>
+    <None Include="..\..\..\..\..\inc\behaviac\agent\context.inl">
+      <Filter>inc\behaviac\agent</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\src\agent\agent.cpp">
+      <Filter>src\agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\agent\context.cpp">
+      <Filter>src\agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\agent\namedevent.cpp">
+      <Filter>src\agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\agent\propertynode.cpp">
+      <Filter>src\agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\agent\state_t.cpp">
+      <Filter>src\agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\src\agent\taskmethod.cpp">
+      <Filter>src\agent</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
