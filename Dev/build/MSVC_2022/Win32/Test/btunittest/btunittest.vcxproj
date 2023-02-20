@@ -519,10 +519,14 @@
       <AdditionalDependencies>behaviac.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
       <Command>echo ==================== Copy behaviac.dll Related Files | [Debug] ====================
 xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetDir)"
 xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.pdb" "$(TargetDir)"</Command>
-    </PreBuildEvent>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -544,9 +548,13 @@ xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.pdb" "$(TargetD
       <AdditionalDependencies>behaviac.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
       <Command>echo ==================== Copy behaviac.dll Related Files | [Release] ==================
 xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetDir)"</Command>
-    </PreBuildEvent>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -564,10 +572,14 @@ xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetD
       <AdditionalDependencies>behaviac.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
       <Command>echo ==================== Copy behaviac.dll Related Files | [Debug] ====================
 xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetDir)"
 xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.pdb" "$(TargetDir)"</Command>
-    </PreBuildEvent>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -589,9 +601,13 @@ xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.pdb" "$(TargetD
       <AdditionalDependencies>behaviac.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
       <Command>echo ==================== Copy behaviac.dll Related Files | [Release] ==================
 xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetDir)"</Command>
-    </PreBuildEvent>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
