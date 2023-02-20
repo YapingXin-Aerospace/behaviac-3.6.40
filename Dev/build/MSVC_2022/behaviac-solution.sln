@@ -18,6 +18,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "behaviac", "Win32\LibDev\behaviac\behaviac.vcxproj", "{2284461D-D8E2-49BD-8B8D-0C3D55F4663E}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "btunittest", "Win32\Test\btunittest\btunittest.vcxproj", "{9BEE25CB-4267-4823-83B6-B6B77D75442F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2284461D-D8E2-49BD-8B8D-0C3D55F4663E} = {2284461D-D8E2-49BD-8B8D-0C3D55F4663E}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
