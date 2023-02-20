@@ -63,3 +63,15 @@ xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetD
 
 
 
+D:\DevSpace\behaviac-3.6.40\Dev\test\btunittest\Others\btloadtest.cpp:348
+behaviac::IFile* fp = behaviac::CFileManager::GetInstance()->FileOpen("../inc/behaviac/behaviac.h");
+
+../../../../../../../inc/behaviac/behaviac.h
+
+D:\DevSpace\behaviac-3.6.40\Dev\test\btunittest\main.cpp:70
+behaviac::Workspace::GetInstance()->SetFilePath("../test/btunittest/BehaviacData/exported");
+
+../../../../../../../test/btunittest/BehaviacData/exported
+
+
+
