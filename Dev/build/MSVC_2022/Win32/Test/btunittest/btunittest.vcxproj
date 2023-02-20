@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Agent\AgentArrayAccessTest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Agent\AgentNodeTest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Agent\CustomPropertyAgent.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Agent\EmployeeParTestAgent.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Agent\FSMAgentTest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Agent\HTNAgentHouse.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Agent\HTNAgentHouseBase.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Agent\HTNAgentTravel.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Agent\ParTestAgent.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Agent\ParTestAgentBase.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Agent\ParTestRegNameAgent.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Agent\PreconEffectorAgent.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Agent\PreconEffectorTest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Agent\PropertyReadonlyAgent.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Agent\UnitTestTypes.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\ArrayAccessTest\ArrayAccessTest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\attachments\PreconEffectorUintTest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\behaviacsystem.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\BehaviacWorkspace.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_0.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_1.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_10.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_2.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_3.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_4.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_5.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_6.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_7.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_8.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_9.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\behaviac_generated\types\internal\behaviac_agent_meta.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\behaviac_generated\types\internal\behaviac_customized_types.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\ext\extendreftype.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\FSMTest\fsmtestbase_0.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\FSMTest\fsmunittest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\HTNTest\htnhouseunittest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\HTNTest\htntravelunittest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\main.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Meta\testtype.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\NodeTest\DecorationNodeUnitTest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\NodeTest\EnterExitActionUnitTest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\NodeTest\EventUnitTest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\NodeTest\NodeUnitTest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\NodeTest\ParallelNodeUnitTest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\NodeTest\PredicateUnitTest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\NodeTest\QueryUnitTest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Others\btloadtest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Others\btmethodtest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Others\btunittest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Others\parallelnodetest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Others\probabilityselectortest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Others\selectorlooptest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Others\selectorstochastictest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\Others\sequencestochastictest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\ParPropertyTest\ParPropertyUnitTest.cpp" />
+    <ClCompile Include="..\..\..\..\..\test\btunittest\ParPropertyTest\PropertyReadonlyUnitTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\test\btunittest\Agent\AgentArrayAccessTest.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\Agent\AgentNodeTest.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\Agent\CustomPropertyAgent.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\Agent\EmployeeParTestAgent.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\Agent\FSMAgentTest.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\Agent\HTNAgentHouse.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\Agent\HTNAgentHouseBase.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\Agent\HTNAgentTravel.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\Agent\ParTestAgent.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\Agent\ParTestAgentBase.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\Agent\ParTestRegNameAgent.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\Agent\PreconEffectorAgent.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\Agent\PreconEffectorTest.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\Agent\PropertyReadonlyAgent.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\Agent\UnitTestTypes.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\BehaviacWorkspace.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_0.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_1.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_10.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_2.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_3.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_4.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_5.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_6.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_7.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_8.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\behaviac_generated\behaviors\behaviac_generated_behaviors_9.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\behaviac_generated\types\behaviac_types.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\behaviac_generated\types\internal\behaviac_agent_headers.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\behaviac_generated\types\internal\behaviac_agent_member_visitor.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\behaviac_generated\types\internal\behaviac_agent_meta.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\behaviac_generated\types\internal\behaviac_customized_types.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\behaviac_generated\types\internal\behaviac_headers.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\behaviortest.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\btloadtestsuite.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\ext\extendreftype.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\ext\extendstruct.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\ext\range.h" />
+    <ClInclude Include="..\..\..\..\..\test\btunittest\test.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\BehaviacUnitTestCpp.workspace.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\meta\BehaviacUnitTestCpp.meta.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_child_agent_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_noop_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_ut_3.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_ut_waitforsignal_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_ut_waitforsignal_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_ut_waitforsignal_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_waitframes_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\circular_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\condition_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\condition_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\condition_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\condition_ut_3.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_alwaysfailure_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_alwaysrunning_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_alwayssuccess_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_countlimit_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_countlimit_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_countlimit_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_countlimit_ut_3.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_failureuntil_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_failureuntil_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_frames_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_log_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_loopuntil_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_loopuntil_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_loopuntil_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_loop_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_loop_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_not_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_not_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_not_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_successuntil_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_successuntil_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\end_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\end_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\end_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\end_ut_3.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\end_ut_4.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\end_ut_5.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\enter_exit_action_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\enter_exit_action_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\enter_exit_action_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_subtree_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_subtree_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_subtree_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_subtree_3.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_subtree_4.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_subtree_5.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_subtree_6.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_ut_3.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_ut_4.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\frames_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\fsm\action_ut_1_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\fsm\bt_ref_fsm.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\fsm\fsm_ref_bt_ut.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\fsm\fsm_ref_fsm_ut.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\fsm\fsm_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\fsm\fsm_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\htn\house\build_house.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\htn\house\construct.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\htn\house\root.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\htn\travel\root.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\htn\travel\travel.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\htn\travel\travel_by_air.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\if_else_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\if_else_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\parallel_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\parallel_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\parallel_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\parallel_ut_3.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\parallel_ut_4.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\PreconditionEffectorTest\PreconditionEffectorTest_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\PreconditionEffectorTest\PreconditionEffectorTest_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\PreconditionEffectorTest\PreconditionEffectorTest_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\PreconditionEffectorTest\PreconditionEffectorTest_3.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_action_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_action_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_action_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_action_ut_3.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_selector_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_selector_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_selector_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_selector_ut_3.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_selector_ut_4.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_selector_ut_5.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_sequence_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_sequence_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_sequence_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_sequence_ut_3.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_sequence_ut_4.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_sequence_ut_5.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\reference_sub_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\reference_sub_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\reference_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\reference_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\reference_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\repeat\repeat_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\repeat\repeat_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_loop_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_loop_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_loop_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_loop_ut_3.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_loop_ut_4.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_loop_ut_5.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_loop_ut_6.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_loop_ut_7.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_loop_ut_8.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_probability_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_probability_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_probability_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_probability_ut_3.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_probability_ut_4.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_stochastic_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_stochastic_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_stochastic_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_ut_3.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_ut_4.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_ut_5.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\sequence_stochastic_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\sequence_stochastic_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\sequence_stochastic_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\sequence_stochastic_ut_3.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\sequence_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\sequence_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\sequence_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\sequence_ut_3.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\wait_ut_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\wait_ut_1.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\wait_ut_2.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\cast_param.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\const_param.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\custom_property_as_left_value_and_param.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\custom_property_reset.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\local_out_scope.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\par_as_left_value_and_param.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\par_as_ref_param.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\property_as_left_value.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\property_as_left_value_and_param.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\property_as_ref_param.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\readonly_default.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\register_name_as_left_value_and_param.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\static_member_function_test_0.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\static_property_as_left_value_and_param.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\static_property_as_ref_param.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\vector_test.xml" />
+    <Xml Include="..\..\..\..\..\test\btunittest\BehaviacData\xmlmeta\UnitTestCppMeta.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\meta\BehaviacUnitTestCpp.meta.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_child_agent_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_noop_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_ut_3.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_ut_waitforsignal_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_ut_waitforsignal_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_ut_waitforsignal_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\action_waitframes_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\circular_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\condition_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\condition_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\condition_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\condition_ut_3.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_alwaysfailure_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_alwaysrunning_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_alwayssuccess_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_countlimit_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_countlimit_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_countlimit_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_countlimit_ut_3.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_failureuntil_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_failureuntil_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_frames_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_log_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_loopuntil_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_loopuntil_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_loopuntil_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_loop_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_loop_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_not_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_not_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_not_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_successuntil_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\decoration_successuntil_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\end_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\end_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\end_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\end_ut_3.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\end_ut_4.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\end_ut_5.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\enter_exit_action_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\enter_exit_action_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\enter_exit_action_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_subtree_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_subtree_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_subtree_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_subtree_3.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_subtree_4.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_subtree_5.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_subtree_6.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_ut_3.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\event_ut_4.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\frames_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\fsm\action_ut_1_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\fsm\bt_ref_fsm.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\fsm\fsm_ref_bt_ut.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\fsm\fsm_ref_fsm_ut.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\fsm\fsm_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\fsm\fsm_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\htn\house\build_house.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\htn\house\construct.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\htn\house\root.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\htn\travel\root.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\htn\travel\travel.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\htn\travel\travel_by_air.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\if_else_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\if_else_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\parallel_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\parallel_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\parallel_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\parallel_ut_3.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\parallel_ut_4.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\PreconditionEffectorTest\PreconditionEffectorTest_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\PreconditionEffectorTest\PreconditionEffectorTest_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\PreconditionEffectorTest\PreconditionEffectorTest_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\PreconditionEffectorTest\PreconditionEffectorTest_3.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_action_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_action_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_action_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_action_ut_3.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_selector_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_selector_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_selector_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_selector_ut_3.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_selector_ut_4.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_selector_ut_5.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_sequence_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_sequence_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_sequence_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_sequence_ut_3.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_sequence_ut_4.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\predicate_sequence_ut_5.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\reference_sub_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\reference_sub_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\reference_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\reference_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\reference_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\repeat\repeat_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\repeat\repeat_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_loop_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_loop_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_loop_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_loop_ut_3.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_loop_ut_4.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_loop_ut_5.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_loop_ut_6.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_loop_ut_7.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_loop_ut_8.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_probability_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_probability_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_probability_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_probability_ut_3.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_probability_ut_4.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_stochastic_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_stochastic_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_stochastic_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_ut_3.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_ut_4.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\selector_ut_5.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\sequence_stochastic_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\sequence_stochastic_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\sequence_stochastic_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\sequence_stochastic_ut_3.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\sequence_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\sequence_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\sequence_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\sequence_ut_3.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\wait_ut_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\wait_ut_1.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\node_test\wait_ut_2.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\cast_param.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\const_param.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\custom_property_as_left_value_and_param.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\custom_property_reset.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\local_out_scope.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\par_as_left_value_and_param.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\par_as_ref_param.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\property_as_left_value.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\property_as_left_value_and_param.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\property_as_ref_param.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\readonly_default.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\register_name_as_left_value_and_param.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\static_member_function_test_0.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\static_property_as_left_value_and_param.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\static_property_as_ref_param.bson.bytes" />
+    <None Include="..\..\..\..\..\test\btunittest\BehaviacData\exported\par_test\vector_test.bson.bytes" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{9bee25cb-4267-4823-83b6-b6b77d75442f}</ProjectGuid>
+    <RootNamespace>btunittest</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Win32\Output\EXE\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Win32\IntDir\Test\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Win32\Output\EXE\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Win32\IntDir\Test\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Win32\Output\EXE\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Win32\IntDir\Test\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)Win32\Output\EXE\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Win32\IntDir\Test\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../../../../inc;../../../../../test/btunittest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\Output\DLL\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>behaviac.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ==================== Copy behaviac.dll Related Files | [Debug] ====================
+xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetDir)"
+xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.pdb" "$(TargetDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../../../../inc;../../../../../test/btunittest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\Output\DLL\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>behaviac.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ==================== Copy behaviac.dll Related Files | [Release] ==================
+xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../../../../inc;../../../../../test/btunittest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\Output\DLL\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>behaviac.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ==================== Copy behaviac.dll Related Files | [Debug] ====================
+xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetDir)"
+xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.pdb" "$(TargetDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../../../../../inc;../../../../../test/btunittest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\Output\DLL\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>behaviac.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>echo ==================== Copy behaviac.dll Related Files | [Release] ==================
+xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetDir)"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

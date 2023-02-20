@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tutorial", "Tutorial", "{0A
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "behaviac", "Win32\LibDev\behaviac\behaviac.vcxproj", "{2284461D-D8E2-49BD-8B8D-0C3D55F4663E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "btunittest", "Win32\Test\btunittest\btunittest.vcxproj", "{9BEE25CB-4267-4823-83B6-B6B77D75442F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -33,6 +35,14 @@ Global
 		{2284461D-D8E2-49BD-8B8D-0C3D55F4663E}.Release|x64.Build.0 = Release|x64
 		{2284461D-D8E2-49BD-8B8D-0C3D55F4663E}.Release|x86.ActiveCfg = Release|Win32
 		{2284461D-D8E2-49BD-8B8D-0C3D55F4663E}.Release|x86.Build.0 = Release|Win32
+		{9BEE25CB-4267-4823-83B6-B6B77D75442F}.Debug|x64.ActiveCfg = Debug|x64
+		{9BEE25CB-4267-4823-83B6-B6B77D75442F}.Debug|x64.Build.0 = Debug|x64
+		{9BEE25CB-4267-4823-83B6-B6B77D75442F}.Debug|x86.ActiveCfg = Debug|Win32
+		{9BEE25CB-4267-4823-83B6-B6B77D75442F}.Debug|x86.Build.0 = Debug|Win32
+		{9BEE25CB-4267-4823-83B6-B6B77D75442F}.Release|x64.ActiveCfg = Release|x64
+		{9BEE25CB-4267-4823-83B6-B6B77D75442F}.Release|x64.Build.0 = Release|x64
+		{9BEE25CB-4267-4823-83B6-B6B77D75442F}.Release|x86.ActiveCfg = Release|Win32
+		{9BEE25CB-4267-4823-83B6-B6B77D75442F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +53,7 @@ Global
 		{DB1FA3D4-E099-4A48-8604-5A6842D9E17B} = {5200FA1B-7887-452B-BC1D-3AA0B74B10AD}
 		{0A03319D-B07D-409A-8153-B654844B7A06} = {5200FA1B-7887-452B-BC1D-3AA0B74B10AD}
 		{2284461D-D8E2-49BD-8B8D-0C3D55F4663E} = {696FD289-33AD-472F-97EB-B88669E083F6}
+		{9BEE25CB-4267-4823-83B6-B6B77D75442F} = {DB1FA3D4-E099-4A48-8604-5A6842D9E17B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {052EA4EA-2B6F-4566-8E30-0C5FBDE01062}
