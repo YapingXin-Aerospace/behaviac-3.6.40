@@ -26,3 +26,40 @@ echo ======== Copied Related Resource Files ========
 Configuration Properties | C/C++ | All Options
 Additional Options: /bigobj
 
+===================================================================================
+
+DLL/LibDev Project Output and Intermediate Directories:
+
+Output Directory:
+$(SolutionDir)Win32\Output\DLL\$(Platform)\$(Configuration)\
+
+Intermediate Directory:
+$(SolutionDir)Win32\IntDir\LibDev\$(ProjectName)\$(Platform)\$(Configuration)\
+
+===================================================================================
+
+EXE/Test Project Output and Intermediate Directories:
+
+Output Directory:
+$(SolutionDir)Win32\Output\EXE\$(Platform)\$(Configuration)\
+
+Intermediate Directory:
+$(SolutionDir)Win32\IntDir\Test\$(ProjectName)\$(Platform)\$(Configuration)\
+
+===================================================================================
+
+
+Additional Library Directory:
+..\..\Output\DLL\$(Platform)\$(Configuration)
+
+behaviac.lib
+
+echo ==================== Copy behaviac.dll Related Files | [Debug] ====================
+xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetDir)"
+xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.pdb" "$(TargetDir)"
+
+echo ==================== Copy behaviac.dll Related Files | [Release] ==================
+xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetDir)"
+
+
+
