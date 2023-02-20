@@ -523,9 +523,10 @@
       </Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>echo ==================== Copy behaviac.dll Related Files | [Debug] ====================
+      <Command>echo ==================== Copy behaviac.dll Related Files --&gt; Debug ====================
 xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetDir)"
-xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.pdb" "$(TargetDir)"</Command>
+xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.pdb" "$(TargetDir)"
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -552,8 +553,9 @@ xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.pdb" "$(TargetD
       </Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>echo ==================== Copy behaviac.dll Related Files | [Release] ==================
-xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetDir)"</Command>
+      <Command>echo ==================== Copy behaviac.dll Related Files --&gt; Release ==================
+xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetDir)"
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -576,9 +578,10 @@ xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetD
       </Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>echo ==================== Copy behaviac.dll Related Files | [Debug] ====================
+      <Command>echo ==================== Copy behaviac.dll Related Files --&gt; Debug ====================
 xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetDir)"
-xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.pdb" "$(TargetDir)"</Command>
+xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.pdb" "$(TargetDir)"
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -605,8 +608,9 @@ xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.pdb" "$(TargetD
       </Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Command>echo ==================== Copy behaviac.dll Related Files | [Release] ==================
-xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetDir)"</Command>
+      <Command>echo ==================== Copy behaviac.dll Related Files --&gt; Release ==================
+xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetDir)"
+</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
