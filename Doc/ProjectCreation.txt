@@ -20,3 +20,9 @@ echo ======== Copy Related Resource Files ========
 xcopy /Y ..\..\..\..\..\Resource\Configuration\EHM-Host.xml $(TargetDir)Configuration\
 echo ======== Copied Related Resource Files ========
 
+
+=================================================
+
+Configuration Properties | C/C++ | All Options
+Additional Options: /bigobj
+
