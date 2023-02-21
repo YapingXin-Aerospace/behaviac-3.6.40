@@ -74,4 +74,9 @@ behaviac::Workspace::GetInstance()->SetFilePath("../test/btunittest/BehaviacData
 ../../../../../../../test/btunittest/BehaviacData/exported
 
 
+Additional Include Directory:
+../../../../../inc
+../../../../../test/demo_running
+
+
 
