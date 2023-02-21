@@ -36,3 +36,9 @@
 /Dev/build/MSVC_2022/.vs
 /Dev/build/MSVC_2022/Win32/Test/btunittest/btunittest.vcxproj.user
 /Dev/build/MSVC_2022/Win32/Test/demo_running/demo_running.vcxproj.user
+/Dev/tools/designer/.vs
+/Dev/tools/designer/BehaviacDesigner/obj
+/Dev/tools/designer/BehaviacDesignerBase/obj
+/Dev/tools/designer/External/DockPanel/WinFormsUI/obj
+/Dev/tools/designer/External/DockPanel/WinFormsUI/bin
+/Dev/tools/designer/Plugins/PluginBehaviac/obj
