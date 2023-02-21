@@ -42,3 +42,5 @@
 /Dev/tools/designer/External/DockPanel/WinFormsUI/obj
 /Dev/tools/designer/External/DockPanel/WinFormsUI/bin
 /Dev/tools/designer/Plugins/PluginBehaviac/obj
+/Dev/tools/designer/out
+/Dev/tools/designer/BehaviacDesigner/BehaviacDesigner.csproj.user
