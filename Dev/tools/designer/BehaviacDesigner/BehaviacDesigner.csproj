@@ -607,6 +607,9 @@
     <Content Include="Resources\Folder-Open.png" />
     <Content Include="Resources\folder_new.png" />
     <Content Include="Resources\Forward.png" />
+    <Content Include="Resources\out\config.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\Pause.png" />
     <Content Include="Resources\Play.png" />
     <None Include="Resources\prefab.ico" />
