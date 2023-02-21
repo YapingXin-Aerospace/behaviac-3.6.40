@@ -54,11 +54,11 @@ Additional Library Directory:
 
 behaviac.lib
 
-echo ==================== Copy behaviac.dll Related Files --> Debug ====================
+echo ============== Copy behaviac.dll Related Files for build type: Debug ==============
 xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetDir)"
 xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.pdb" "$(TargetDir)"
 
-echo ==================== Copy behaviac.dll Related Files --> Release ==================
+echo ============= Copy behaviac.dll Related Files for build type:  Release ============
 xcopy /Y "..\..\Output\DLL\$(Platform)\$(Configuration)\behaviac.dll" "$(TargetDir)"
 
 
