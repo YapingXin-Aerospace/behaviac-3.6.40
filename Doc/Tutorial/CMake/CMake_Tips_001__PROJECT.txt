@@ -1,0 +1,9 @@
+﻿project
+https://cmake.org/cmake/help/latest/command/project.html
+
+Cmake命令之project介绍
+https://www.jianshu.com/p/cdd6e56c2422
+
+Demo:
+Resource/001_CMakeLists.txt
+
