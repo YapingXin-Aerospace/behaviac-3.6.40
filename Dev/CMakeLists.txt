@@ -2,5 +2,7 @@
 PROJECT (tencent-behaviac-solution
     VERSION 3.6.40
     DESCRIPTION "Fork from Tencent/behaviac to make private build."
-    LANGUAGES "CXX, C, CSharp"
+    HOMEPAGE_URL "https://github.com/YapingXin-Aerospace/behaviac-3.6.40"
+    LANGUAGES CXX C CSharp
 )
+
