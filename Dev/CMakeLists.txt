@@ -33,6 +33,8 @@ ELSE ()
     MESSAGE(FATAL_ERROR "Detecting OS platform : (other than Windows or Linux) : ${CMAKE_SYSTEM_NAME}")
 ENDIF ()
 
+MESSAGE(STATUS ">>> CMAKE_GENERATOR          : ${CMAKE_GENERATOR}")
+
 
 SET(EXECUTABLE_OUTPUT_PATH   ${PROJECT_BINARY_DIR}/../bin)
 SET(LIBRARY_OUTPUT_PATH      ${PROJECT_BINARY_DIR}/../lib)
@@ -42,7 +44,9 @@ SET(LIBRARY_OUTPUT_PATH      ${PROJECT_BINARY_DIR}/../lib)
 
 # For Windows OS: Prompt to require CMAKE_BUILD_TYPE parameter in [Debug, Release]
 IF (CMAKE_SYSTEM_NAME MATCHES "Windows")
-    MESSAGE(STATUS ">>> CMAKE_BUILD_TYPE : ${CMAKE_BUILD_TYPE}")    
+    
+    MESSAGE(STATUS ">>> CMAKE_BUILD_TYPE         : ${CMAKE_BUILD_TYPE}")
+
     IF ((NOT CMAKE_BUILD_TYPE STREQUAL Debug) AND 
         (NOT CMAKE_BUILD_TYPE STREQUAL Release))
         MESSAGE(STATUS ">>> Please provide the CMAKE_BUILD_TYPE parameter in [Debug, Release]")
@@ -50,7 +54,11 @@ IF (CMAKE_SYSTEM_NAME MATCHES "Windows")
     ENDIF ()
 
     IF (MSVC)
+
         MESSAGE(STATUS ">>> CMAKE_GENERATOR_PLATFORM : ${CMAKE_GENERATOR_PLATFORM}")
+        MESSAGE(STATUS ">>> MSVC_VERSION             : ${MSVC_VERSION}")
+        MESSAGE(STATUS ">>> MSVC_TOOLSET_VERSION     : ${MSVC_TOOLSET_VERSION}")
+
         IF ((NOT CMAKE_GENERATOR_PLATFORM STREQUAL x64) AND 
             (NOT CMAKE_GENERATOR_PLATFORM STREQUAL Win32))
             MESSAGE(STATUS ">>> Please provide the CMAKE_GENERATOR_PLATFORM parameter in [Win32, x64]")
