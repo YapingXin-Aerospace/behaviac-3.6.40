@@ -1,0 +1,31 @@
+﻿REF 01:
+https://modern-cmake-cn.github.io/Modern-CMake-zh_CN/chapters/features/cpp11.html
+
+CMake 3.1+: 全局设置以及属性设置
+这是支持 C++ 标准的另一种方式，（在目标及全局级别）设置三个特定属性的值。这是全局的属性：
+
+set(CMAKE_CXX_STANDARD 11 CACHE STRING "The C++ standard to use")
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+第一行设置了 C++ 标准的级别， 第二行告诉 CMake 使用上述设置， 最后一行关闭了拓展，来明确自己使用了 -std=c++11 还是 -std=g++11 。这个方法中可以在最终包 (final package) 中使用，但是不推荐在库中使用。你应该总是把它设置为一个缓存变量，这样你就可以很容易地重写其内容来尝试新的标准（或者如果你在库中使用它的话，这是重写它的唯一方式。不过再重申一遍，不要在库中使用此方式）。你也可以对目标来设置这些属性：
+
+set_target_properties(myTarget PROPERTIES
+    CXX_STANDARD 11
+    CXX_STANDARD_REQUIRED YES
+    CXX_EXTENSIONS NO
+)
+这种方式相比于上面来说更好，但是仍然没法对 PRIVATE 和 INTERFACE 目标的属性有明确的控制，所以他们也仍然只对最终目标 (final targets) 有用。
+
+你可以在 Craig Scott's useful blog post 这里找到更多关于后面两种方法的信息。
+
+不要自己设置手动标志。如果这么做，你必须对每个编译器的每个发行版设置正确的标志，你无法通过不支持的编译器的报错信息来解决错误，并且 IDE 可能不会去关心手动设置的标志。
+
+
+REF 02:
+cmake-compile-features(7)
+https://cmake.org/cmake/help/latest/manual/cmake-compile-features.7.html#manual:cmake-compile-features(7)
+
+CXX_STANDARD
+https://cmake.org/cmake/help/latest/prop_tgt/CXX_STANDARD.html#prop_tgt:CXX_STANDARD
+

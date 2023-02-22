@@ -7,3 +7,11 @@ https://www.jianshu.com/p/cdd6e56c2422
 Demo:
 Resource/001_CMakeLists.txt
 
+相关知识点：
+
+CheckLanguage
+https://cmake.org/cmake/help/latest/module/CheckLanguage.html
+
+enable_language
+https://cmake.org/cmake/help/latest/command/enable_language.html
+

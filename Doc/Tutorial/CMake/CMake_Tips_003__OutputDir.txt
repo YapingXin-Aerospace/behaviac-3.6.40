@@ -1,0 +1,27 @@
+﻿EXECUTABLE_OUTPUT_PATH
+https://cmake.org/cmake/help/latest/variable/EXECUTABLE_OUTPUT_PATH.html
+
+LIBRARY_OUTPUT_PATH
+https://cmake.org/cmake/help/latest/variable/LIBRARY_OUTPUT_PATH.html
+
+CMAKE_LIBRARY_OUTPUT_DIRECTORY
+https://cmake.org/cmake/help/latest/variable/CMAKE_LIBRARY_OUTPUT_DIRECTORY.html
+
+CMAKE_LIBRARY_OUTPUT_DIRECTORY_<CONFIG>
+https://cmake.org/cmake/help/latest/variable/CMAKE_LIBRARY_OUTPUT_DIRECTORY_CONFIG.html
+
+RUNTIME_OUTPUT_DIRECTORY
+https://cmake.org/cmake/help/latest/prop_tgt/RUNTIME_OUTPUT_DIRECTORY.html#prop_tgt:RUNTIME_OUTPUT_DIRECTORY
+
+Output Artifacts
+https://cmake.org/cmake/help/latest/manual/cmake-buildsystem.7.html#output-artifacts
+
+CMake copy dependencies to executable output path
+https://stackoverflow.com/questions/51556088/cmake-copy-dependencies-to-executable-output-path
+
+cmake RUNTIME_OUTPUT_DIRECTORY on Windows
+https://stackoverflow.com/questions/543203/cmake-runtime-output-directory-on-windows
+
+导出
+https://modern-cmake-cn.github.io/Modern-CMake-zh_CN/chapters/install/exporting.html
+
