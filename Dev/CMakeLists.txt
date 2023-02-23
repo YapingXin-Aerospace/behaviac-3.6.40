@@ -38,18 +38,18 @@ MESSAGE(STATUS ">>> CMAKE_GENERATOR          : ${CMAKE_GENERATOR}")
 
 SET(EXECUTABLE_OUTPUT_PATH   ${PROJECT_BINARY_DIR}/../bin)
 SET(LIBRARY_OUTPUT_PATH      ${PROJECT_BINARY_DIR}/../lib)
-# SET(RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/../OutRUN)
-# SET(ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/../OutARC)
 
 
-# For Windows OS: Prompt to require CMAKE_BUILD_TYPE parameter in [Debug, Release]
+# For Windows OS: Prompt to require CMAKE_BUILD_TYPE parameter in [Debug, Release, MinSizeRel, RelWithDebInfo]
 IF (CMAKE_SYSTEM_NAME MATCHES "Windows")
     
     MESSAGE(STATUS ">>> CMAKE_BUILD_TYPE         : ${CMAKE_BUILD_TYPE}")
 
     IF ((NOT CMAKE_BUILD_TYPE STREQUAL Debug) AND 
-        (NOT CMAKE_BUILD_TYPE STREQUAL Release))
-        MESSAGE(STATUS ">>> Please provide the CMAKE_BUILD_TYPE parameter in [Debug, Release]")
+        (NOT CMAKE_BUILD_TYPE STREQUAL Release) AND 
+        (NOT CMAKE_BUILD_TYPE STREQUAL MinSizeRel) AND 
+        (NOT CMAKE_BUILD_TYPE STREQUAL RelWithDebInfo))
+        MESSAGE(STATUS ">>> Please provide the CMAKE_BUILD_TYPE parameter in [Debug, Release, MinSizeRel, RelWithDebInfo]")
         MESSAGE(FATAL_ERROR "" )
     ENDIF ()
 
