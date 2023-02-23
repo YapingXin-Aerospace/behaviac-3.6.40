@@ -77,3 +77,39 @@ MESSAGE(STATUS "LIBRARY_OUTPUT_PATH    : ${LIBRARY_OUTPUT_PATH}")
 # MESSAGE(STATUS "RUNTIME_OUTPUT_DIRECTORY : ${RUNTIME_OUTPUT_DIRECTORY}")
 # MESSAGE(STATUS "ARCHIVE_OUTPUT_DIRECTORY : ${ARCHIVE_OUTPUT_DIRECTORY}")
 # MESSAGE(STATUS "<<< Output Artifacts")
+
+
+
+# exclude_dir = "/exclude_dir/"
+macro (ExcludeDir src_files exclude_dir)
+	foreach (TMP_PATH ${src_files})
+		string (FIND ${TMP_PATH} ${exclude_dir} EXCLUDE_DIR_FOUND)
+		if (NOT ${EXCLUDE_DIR_FOUND} EQUAL -1)
+			list (REMOVE_ITEM ${src_files} ${TMP_PATH})
+		endif ()
+	endforeach(TMP_PATH)
+endmacro()
+
+# usage: GroupSources("${PROJECT_SOURCE_DIR}/inc/", "inc")
+macro(GroupSources dir prefix)
+    # file(GLOB_RECURSE elements RELATIVE ${dir} *.h *.hpp *.c *.cpp *.cc)
+    file(GLOB_RECURSE elements RELATIVE ${dir} *.*)
+
+    foreach(element ${elements})
+      # Extract filename and directory
+      get_filename_component(element_name ${element} NAME)
+      get_filename_component(element_dir ${element} DIRECTORY)
+
+      if (NOT ${element_dir} STREQUAL "")
+        # If the file is in a subdirectory use it as source group.
+          # Use the full hierarchical structure to build source_groups.
+          string(REPLACE "/" "\\" group_name ${element_dir})
+          source_group("${prefix}\\${group_name}" FILES ${dir}/${element})
+      else()
+        # If the file is in the root directory, place it in the root source_group.
+        source_group("${prefix}\\" FILES ${dir}/${element})
+      endif()
+    endforeach()
+endmacro()
+
+
