@@ -71,6 +71,103 @@ IF (CMAKE_SYSTEM_NAME MATCHES "Windows")
 ENDIF ()
 
 
+# Set BUILD_USE_64BITS according to CMAKE_GENERATOR_PLATFORM
+IF (CMAKE_GENERATOR_PLATFORM STREQUAL x64)
+    SET (BUILD_USE_64BITS ON  CACHE BOOL "CMAKE_GENERATOR is for 64 bit, set to ON accordingly" FORCE)
+ELSE ()
+    SET (BUILD_USE_64BITS OFF CACHE BOOL "Purpose: set to ON to use 64 bits, otherwise set to OFF.")	
+ENDIF ()
+MESSAGE(STATUS ">>> BUILD_USE_64BITS         : ${BUILD_USE_64BITS}")
+
+
+# Set BEHAVIAC_VERSION_MODE, BEHAVIAC_RELEASE_CUSTOMIZED, BEHAVIAC_RELEASE_ON according to CMAKE_BUILD_TYPE
+IF (CMAKE_BUILD_TYPE STREQUAL Debug)
+    SET (BEHAVIAC_RELEASE_CUSTOMIZED 1)
+    SET (BEHAVIAC_RELEASE_ON 0)
+    SET (BEHAVIAC_VERSION_MODE "ForceUseDev" CACHE STRING "version mode, force to use dev/release version or default(dev version on Debug config and release version on Release config)")
+ELSEIF (CMAKE_BUILD_TYPE STREQUAL Release)
+    SET (BEHAVIAC_RELEASE_CUSTOMIZED 1)
+    SET (BEHAVIAC_RELEASE_ON 1)
+    SET (BEHAVIAC_VERSION_MODE "ForeUseRelease" CACHE STRING "version mode, force to use dev/release version or default(dev version on Debug config and release version on Release config)")
+ELSE ()
+    SET (BEHAVIAC_RELEASE_CUSTOMIZED 0)
+    SET (BEHAVIAC_RELEASE_ON 0)
+    SET (BEHAVIAC_VERSION_MODE "Default" CACHE STRING "version mode, force to use dev/release version or default(dev version on Debug config and release version on Release config)")
+ENDIF ()
+MESSAGE(STATUS ">>> _RELEASE_CUSTOMIZED      : ${BEHAVIAC_RELEASE_CUSTOMIZED}")
+MESSAGE(STATUS ">>> BEHAVIAC_RELEASE_ON      : ${BEHAVIAC_RELEASE_ON}")
+MESSAGE(STATUS ">>> BEHAVIAC_VERSION_MODE    : ${BEHAVIAC_VERSION_MODE}")
+
+IF (BEHAVIAC_RELEASE_ON)
+    IF (MSVC)
+        SET (CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /Gy /GL")
+        SET (CMAKE_EXE_LINKER_FLAGS_RELEASE "${CMAKE_EXE_LINKER_FLAGS} /OPT:ICF /OPT:REF /LTCG")
+        SET (CMAKE_MODULE_LINKER_FLAGS_RELEASE "${CMAKE_MODULE_LINKER_FLAGS} /OPT:ICF /OPT:REF /LTCG")
+    ELSE ()
+        include( CheckCXXCompilerFlag )
+        check_cxx_compiler_flag( -flto GXX_HAS_LTO_FLAG )
+
+        message( STATUS "GXX_HAS_LTO_FLAG = ${GXX_HAS_LTO_FLAG}" )
+
+        if( CMAKE_BUILD_TYPE MATCHES Release AND GXX_HAS_LTO_FLAG )
+            find_program(CMAKE_GCC_AR NAMES ${_CMAKE_TOOLCHAIN_PREFIX}gcc-ar${_CMAKE_TOOLCHAIN_SUFFIX} HINTS ${_CMAKE_TOOLCHAIN_LOCATION})
+            find_program(CMAKE_GCC_NM NAMES ${_CMAKE_TOOLCHAIN_PREFIX}gcc-nm HINTS ${_CMAKE_TOOLCHAIN_LOCATION})
+			find_program(CMAKE_GCC_RANLIB NAMES ${_CMAKE_TOOLCHAIN_PREFIX}gcc-ranlib HINTS ${_CMAKE_TOOLCHAIN_LOCATION})
+
+			if( CMAKE_GCC_AR AND CMAKE_GCC_NM AND CMAKE_GCC_RANLIB )
+				message( STATUS "SET LTO Flags" )
+
+				# set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -flto -fno-fat-lto-objects -O3 -ffunction-sections -fdata-sections -fvisibility=hidden -fvisibility-inlines-hidden" )
+				set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -flto -O3" )
+				
+				check_cxx_compiler_flag( -fno-fat-lto-objects GXX_HAS_NO_FAT_LTO_FLAG )
+				
+				message( STATUS "GXX_HAS_NO_FAT_LTO_FLAG = ${GXX_HAS_NO_FAT_LTO_FLAG}" )
+				
+				if (GXX_HAS_NO_FAT_LTO_FLAG)
+					set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-fat-lto-objects" )
+				endif()
+				
+				set( CMAKE_AR "${CMAKE_GCC_AR}" )
+				set( CMAKE_NM "${CMAKE_GCC_NM}" )
+				set( CMAKE_RANLIB "${CMAKE_GCC_RANLIB}" )
+				
+				# set(CMAKE_MODULE_LINKER_FLAGS "${CMAKE_MODULE_LINKER_FLAGS} -Wl,--gc-sections")
+				# set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,--gc-sections")
+			else()
+				message( WARNING "GCC indicates LTO support, but binutils wrappers could not be found. Disabling LTO." )
+			endif()
+        endif()
+
+        # -fipa-icf
+		# -finline-limit=64 
+		# -fno-exceptions -fno-rtti
+		# -fwhole-program
+		# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -ffunction-sections -fdata-sections -fvisibility=hidden -O3 -flto")
+		# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Os -flto -fno-fat-lto-objects")
+		# set(CMAKE_MODULE_LINKER_FLAGS "${CMAKE_MODULE_LINKER_FLAGS} -Wl,--gc-sections -flto")
+		# set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wl,--gc-sections -flto")
+		# set(CMAKE_STATIC_LINKER_FLAGS_RELEASE "${CMAKE_STATIC_LINKER_FLAGS_RELEASE} -flto")
+		
+		# find_package(Gold)
+		 
+		# if (GOLD_FOUND)
+			# SET(LINKER_SCRIPT -fuse-ld=gold -Wl,--icf=safe)
+		# endif()
+    ENDIF ()
+ENDIF ()
+
+IF (BUILD_USE_64BITS)
+    IF (MSVC)
+        IF (NOT CMAKE_GENERATOR_PLATFORM STREQUAL x64)
+            MESSAGE( FATAL_ERROR "You need to specify '${CMAKE_GENERATOR_PLATFORM}' as x64 to generate project file for 64 bit" )
+        ENDIF ()
+    ELSE ()
+        SET (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -m64")
+    ENDIF ()
+ENDIF ()
+
+
 # MESSAGE(STATUS ">>> Output Artifacts")
 MESSAGE(STATUS "EXECUTABLE_OUTPUT_PATH : ${EXECUTABLE_OUTPUT_PATH}")
 MESSAGE(STATUS "LIBRARY_OUTPUT_PATH    : ${LIBRARY_OUTPUT_PATH}")
@@ -114,6 +211,11 @@ endmacro()
 
 
 MESSAGE(STATUS "PROJECT_SOURCE_DIR     : ${PROJECT_SOURCE_DIR}")
+MESSAGE(STATUS "PROJECT_BINARY_DIR     : ${PROJECT_BINARY_DIR}")
+
+
+CONFIGURE_FILE ("${PROJECT_SOURCE_DIR}/build/Config.h.in" "${PROJECT_BINARY_DIR}/Config.h")
+
 
 INCLUDE_DIRECTORIES(
     "${PROJECT_SOURCE_DIR}/inc"
