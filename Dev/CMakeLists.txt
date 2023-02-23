@@ -113,3 +113,33 @@ macro(GroupSources dir prefix)
 endmacro()
 
 
+MESSAGE(STATUS "PROJECT_SOURCE_DIR     : ${PROJECT_SOURCE_DIR}")
+
+INCLUDE_DIRECTORIES(
+    "${PROJECT_SOURCE_DIR}/inc"
+)
+
+
+file(GLOB_RECURSE BEHAVIAC_INC  "${PROJECT_SOURCE_DIR}/inc/*.*")
+file(GLOB_RECURSE BEHAVIAC_SRC  "${PROJECT_SOURCE_DIR}/src/*.*")
+
+if (MSVC)
+    GroupSources("${PROJECT_SOURCE_DIR}/inc/" "inc")
+    GroupSources("${PROJECT_SOURCE_DIR}/src/" "src")
+endif ()
+
+if (MSVC)
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /bigobj")
+endif ()
+
+
+# set( SHARED_LIB "" )
+# if (BEHAVIAC_ANDROID_STUDIO)
+#     set( SHARED_LIB "SHARED" )
+# endif()
+# MESSAGE(STATUS "SHARED_LIB     : ${SHARED_LIB}")
+
+set (LINKER_SCRIPT "")
+
+add_library(behaviac SHARED ${BEHAVIAC_INC} ${BEHAVIAC_SRC} ${LINKER_SCRIPT})
+target_compile_definitions(behaviac PUBLIC "BEHAVIACDLL_EXPORTS" "BEHAVIAC_DLL")
