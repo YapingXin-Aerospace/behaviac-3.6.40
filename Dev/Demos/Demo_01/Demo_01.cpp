@@ -20,6 +20,7 @@
 
 
 static void SetExePath();
+static void Run();
 
 
 int main(int argc, char** argv)
@@ -31,11 +32,11 @@ int main(int argc, char** argv)
 
 	LOGI("BEHAVIAC_CCDEFINE_NAME=%s\n", BEHAVIAC_CCDEFINE_NAME);
 
-    std::cout << "Hello World!\n";
+	Run();
 
-	printf("Press any key to continue...");
-	int ret = getchar();
-	BEHAVIAC_UNUSED_VAR(ret);
+	// printf("Press any key to continue...");
+	// int ret = getchar();
+	// BEHAVIAC_UNUSED_VAR(ret);
 
     return 0;
 }
@@ -58,4 +59,13 @@ static void SetExePath()
 	*p = L'\0';
 
 	SetCurrentDirectory(szCurPath);
+}
+
+
+static void Run()
+{
+	const char* szTreeName = "Demo_01";
+	LOGI("bt: %s\n\n", szTreeName);
+
+	behaviac::Workspace::EFileFormat ff = behaviac::Workspace::EFF_xml;
 }
