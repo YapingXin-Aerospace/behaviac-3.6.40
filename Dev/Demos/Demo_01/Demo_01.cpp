@@ -9,6 +9,8 @@
 #endif
 #endif
 
+#include "behaviac/behaviac.h"
+
 
 int main()
 {
