@@ -27,6 +27,9 @@ FirstAgent::~FirstAgent()
 void FirstAgent::SayHello()
 {
 ///<<< BEGIN WRITING YOUR CODE SayHello
+
+	printf("\nSayHello() Executed!\n\n");
+
 ///<<< END WRITING YOUR CODE
 }
 

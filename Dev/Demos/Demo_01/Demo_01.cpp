@@ -10,6 +10,7 @@
 #endif
 
 #include "behaviac/behaviac.h"
+#include "behaviac/behaviac_generated/types/behaviac_types.h"
 
 
 #define LOGI printf
@@ -21,6 +22,13 @@
 
 static void SetExePath();
 static void Run();
+static bool InitBehavic(behaviac::Workspace::EFileFormat ff);
+static bool InitPlayer();
+static void UpdateLoop();
+static void CleanupPlayer();
+static void CleanupBehaviac();
+
+static FirstAgent* g_FirstAgent = NULL;
 
 
 int main(int argc, char** argv)
@@ -68,4 +76,67 @@ static void Run()
 	LOGI("bt: %s\n\n", szTreeName);
 
 	behaviac::Workspace::EFileFormat ff = behaviac::Workspace::EFF_xml;
+
+	InitBehavic(ff);
+	InitPlayer();
+	UpdateLoop();
+	CleanupPlayer();
+	CleanupBehaviac();
+}
+
+
+static bool InitBehavic(behaviac::Workspace::EFileFormat ff)
+{
+	const char* szFilePath = "../../../../../../../Demos/Demo_01/behaviac/exported";
+
+	LOGI("InitBehavic\n");
+
+	behaviac::Workspace::GetInstance()->SetFilePath(szFilePath);
+	behaviac::Workspace::GetInstance()->SetFileFormat(ff);
+
+	return true;
+}
+
+
+static bool InitPlayer()
+{
+	LOGI("InitPlayer\n");
+
+	g_FirstAgent = behaviac::Agent::Create<FirstAgent>();
+
+	bool bRet = g_FirstAgent->btload("FirstBT");
+	g_FirstAgent->btsetcurrent("FirstBT");
+	return bRet;
+}
+
+
+static void UpdateLoop()
+{
+	LOGI("UpdateLoop\n");
+
+	int frames = 0;
+	behaviac::EBTStatus status = behaviac::BT_RUNNING;
+
+	while (status == behaviac::BT_RUNNING)
+	{
+		LOGI("frame %d\n", ++frames);
+
+		status = g_FirstAgent->btexec();
+	}
+}
+
+
+static void CleanupPlayer()
+{
+	LOGI("CleanupPlayer\n");
+
+	behaviac::Agent::Destroy(g_FirstAgent);
+}
+
+
+static void CleanupBehaviac()
+{
+	LOGI("CleanupBehaviac\n");
+
+	behaviac::Workspace::GetInstance()->Cleanup();
 }
