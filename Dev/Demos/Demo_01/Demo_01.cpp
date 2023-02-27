@@ -3,6 +3,13 @@
 
 #include <iostream>
 
+#ifdef _WIN32
+#ifdef _DEBUG
+#include <vld.h>
+#endif
+#endif
+
+
 int main()
 {
     std::cout << "Hello World!\n";
