@@ -7,10 +7,65 @@
     <Filter Include="Demos\Demo_01">
       <UniqueIdentifier>{55aa2228-a7e5-4434-9602-a331561afe54}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Demos\Demo_01\behaviac">
+      <UniqueIdentifier>{06dfa795-ef46-4fce-a547-cf3158a83523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\Demo_01\behaviac\behaviac_generated">
+      <UniqueIdentifier>{0a609035-4856-4627-8cb5-0822e9afc994}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\Demo_01\behaviac\exported">
+      <UniqueIdentifier>{1ce72e21-ad06-4cbb-9921-1b5f354b4fea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\Demo_01\behaviac\behaviac_generated\behaviors">
+      <UniqueIdentifier>{9f2d346d-6cb0-407d-a344-50e1578361d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\Demo_01\behaviac\behaviac_generated\types">
+      <UniqueIdentifier>{fb97efb4-bcea-4d73-ac42-129b52abcc18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\Demo_01\behaviac\behaviac_generated\types\internal">
+      <UniqueIdentifier>{840144f5-a228-40b5-abd6-71609923f372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\Demo_01\behaviac\exported\meta">
+      <UniqueIdentifier>{10f4efa1-5a37-405e-9eb4-b813fecb2b54}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\Demos\Demo_01\Demo_01.cpp">
       <Filter>Demos\Demo_01</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Demos\Demo_01\behaviac\behaviac_generated\types\internal\behaviac_agent_meta.cpp">
+      <Filter>Demos\Demo_01\behaviac\behaviac_generated\types\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Demos\Demo_01\behaviac\behaviac_generated\types\internal\FirstAgent.cpp">
+      <Filter>Demos\Demo_01\behaviac\behaviac_generated\types\internal</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_01\behaviac\behaviac_generated\types\behaviac_types.h">
+      <Filter>Demos\Demo_01\behaviac\behaviac_generated\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_01\behaviac\behaviac_generated\types\internal\behaviac_agent_headers.h">
+      <Filter>Demos\Demo_01\behaviac\behaviac_generated\types\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_01\behaviac\behaviac_generated\types\internal\behaviac_agent_member_visitor.h">
+      <Filter>Demos\Demo_01\behaviac\behaviac_generated\types\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_01\behaviac\behaviac_generated\types\internal\behaviac_agent_meta.h">
+      <Filter>Demos\Demo_01\behaviac\behaviac_generated\types\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_01\behaviac\behaviac_generated\types\internal\behaviac_headers.h">
+      <Filter>Demos\Demo_01\behaviac\behaviac_generated\types\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_01\behaviac\behaviac_generated\types\internal\FirstAgent.h">
+      <Filter>Demos\Demo_01\behaviac\behaviac_generated\types\internal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\..\..\Demos\Demo_01\behaviac\exported\FirstBT.xml">
+      <Filter>Demos\Demo_01\behaviac\exported</Filter>
+    </Xml>
+    <Xml Include="..\..\..\..\..\Demos\Demo_01\behaviac\exported\meta\Demo_01.meta.xml">
+      <Filter>Demos\Demo_01\behaviac\exported\meta</Filter>
+    </Xml>
   </ItemGroup>
 </Project>
