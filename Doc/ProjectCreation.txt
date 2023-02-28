@@ -79,4 +79,33 @@ Additional Include Directory:
 ../../../../../test/demo_running
 
 
+==================================
+Demo_02 Project settings :: Begin
+==================================
+
+$(SolutionDir)Win32\Output\EXE\$(Platform)\$(Configuration)\
+$(SolutionDir)Win32\IntDir\Test\$(ProjectName)\$(Platform)\$(Configuration)\
+
+../../../../../inc
+../../../../../Demos/Demo_02
+$(VLD_Root)\include
+
+
+..\..\Output\DLL\$(Platform)\$(Configuration)
+--> Debug <--
+$(VLD_Root)\lib\$(Platform)
+
+
+behaviac.lib
+--> Debug <--
+vld.lib
+
+--> Debug <--
+copy "$(VLD_Root)\bin\$(Platform)\*.*" "$(TargetDir)"
+
+==================================
+Demo_02 Project settings :: END
+==================================
+
+
 
