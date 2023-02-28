@@ -4,6 +4,7 @@
 // PLEASE MODIFY AND REGENERETE IT IN THE DESIGNER FOR CLASS/MEMBERS/METHODS, ETC.
 // -------------------------------------------------------------------------------
 
+#include <iostream>
 #include "FirstAgent.h"
 
 ///<<< BEGIN WRITING YOUR CODE FILE_INIT
@@ -28,6 +29,9 @@ FirstAgent::~FirstAgent()
 void FirstAgent::m1(const behaviac::string& msg)
 {
 ///<<< BEGIN WRITING YOUR CODE m1
+
+	std::cout << msg << std::endl;
+
 ///<<< END WRITING YOUR CODE
 }
 
