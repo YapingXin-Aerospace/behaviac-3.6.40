@@ -19,7 +19,23 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Demos\Demo_02\behaviac\behaviac_generated\behaviors\behaviac_generated_behaviors.cpp" />
+    <ClCompile Include="..\..\..\..\..\Demos\Demo_02\behaviac\behaviac_generated\types\internal\behaviac_agent_meta.cpp" />
+    <ClCompile Include="..\..\..\..\..\Demos\Demo_02\behaviac\behaviac_generated\types\internal\FirstAgent.cpp" />
     <ClCompile Include="..\..\..\..\..\Demos\Demo_02\Demo_02.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_02\behaviac\behaviac_generated\behaviors\behaviac_generated_behaviors.h" />
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_02\behaviac\behaviac_generated\types\behaviac_types.h" />
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_02\behaviac\behaviac_generated\types\internal\behaviac_agent_headers.h" />
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_02\behaviac\behaviac_generated\types\internal\behaviac_agent_member_visitor.h" />
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_02\behaviac\behaviac_generated\types\internal\behaviac_agent_meta.h" />
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_02\behaviac\behaviac_generated\types\internal\behaviac_headers.h" />
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_02\behaviac\behaviac_generated\types\internal\FirstAgent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\..\..\Demos\Demo_02\behaviac\exported\FirstBT.xml" />
+    <Xml Include="..\..\..\..\..\Demos\Demo_02\behaviac\exported\meta\Demo_02.meta.xml" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
