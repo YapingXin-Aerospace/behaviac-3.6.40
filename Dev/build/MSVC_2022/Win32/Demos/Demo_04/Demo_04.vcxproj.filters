@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Demos">
+      <UniqueIdentifier>{dd3b2e18-12bd-4111-8306-035d76839bf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\Demo_04">
+      <UniqueIdentifier>{c4d4a9e8-df02-4505-a3ed-a37b603cd864}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\Demo_04\behaviac">
+      <UniqueIdentifier>{d186672f-2427-4ff3-af12-8e423192a68b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\Demo_04\behaviac\behaviac_generated">
+      <UniqueIdentifier>{dc24d44c-444d-4d0f-818b-c5519b87590c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\Demo_04\behaviac\exported">
+      <UniqueIdentifier>{b77ba56b-046e-4229-a7cd-3fbc33dd65bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\Demo_04\behaviac\behaviac_generated\behaviors">
+      <UniqueIdentifier>{6ac9c617-5719-4704-8346-619b3cfd1e23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\Demo_04\behaviac\behaviac_generated\types">
+      <UniqueIdentifier>{8b11adb2-1b69-4da1-b9ef-e665ed1d6886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\Demo_04\behaviac\behaviac_generated\types\internal">
+      <UniqueIdentifier>{6af2d84b-ef95-47f7-9d8d-9bfa87ac19b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demos\Demo_04\behaviac\exported\meta">
+      <UniqueIdentifier>{02160665-70a2-40f5-ad85-93596d8429a4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Demos\Demo_04\Demo_04.cpp">
+      <Filter>Demos\Demo_04</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Demos\Demo_04\behaviac\behaviac_generated\behaviors\behaviac_generated_behaviors.cpp">
+      <Filter>Demos\Demo_04\behaviac\behaviac_generated\behaviors</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Demos\Demo_04\behaviac\behaviac_generated\types\internal\behaviac_agent_meta.cpp">
+      <Filter>Demos\Demo_04\behaviac\behaviac_generated\types\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Demos\Demo_04\behaviac\behaviac_generated\types\internal\FirstAgent.cpp">
+      <Filter>Demos\Demo_04\behaviac\behaviac_generated\types\internal</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_04\behaviac\behaviac_generated\behaviors\behaviac_generated_behaviors.h">
+      <Filter>Demos\Demo_04\behaviac\behaviac_generated\behaviors</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_04\behaviac\behaviac_generated\types\behaviac_types.h">
+      <Filter>Demos\Demo_04\behaviac\behaviac_generated\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_04\behaviac\behaviac_generated\types\internal\behaviac_agent_headers.h">
+      <Filter>Demos\Demo_04\behaviac\behaviac_generated\types\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_04\behaviac\behaviac_generated\types\internal\behaviac_agent_member_visitor.h">
+      <Filter>Demos\Demo_04\behaviac\behaviac_generated\types\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_04\behaviac\behaviac_generated\types\internal\behaviac_agent_meta.h">
+      <Filter>Demos\Demo_04\behaviac\behaviac_generated\types\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_04\behaviac\behaviac_generated\types\internal\behaviac_headers.h">
+      <Filter>Demos\Demo_04\behaviac\behaviac_generated\types\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Demos\Demo_04\behaviac\behaviac_generated\types\internal\FirstAgent.h">
+      <Filter>Demos\Demo_04\behaviac\behaviac_generated\types\internal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\..\..\Demos\Demo_04\behaviac\exported\maintree_task.xml">
+      <Filter>Demos\Demo_04\behaviac\exported</Filter>
+    </Xml>
+    <Xml Include="..\..\..\..\..\Demos\Demo_04\behaviac\exported\subtree_task.xml">
+      <Filter>Demos\Demo_04\behaviac\exported</Filter>
+    </Xml>
+    <Xml Include="..\..\..\..\..\Demos\Demo_04\behaviac\exported\meta\Demo_04.meta.xml">
+      <Filter>Demos\Demo_04\behaviac\exported\meta</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>
